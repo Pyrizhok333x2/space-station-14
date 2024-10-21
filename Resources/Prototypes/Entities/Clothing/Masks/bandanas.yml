@@ -40,6 +40,8 @@
   id: ClothingMaskBandBlack
   name: black bandana
   description: A black bandana to make you look cool.
+  name: чорна бандана
+  description: Чорна бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/black.rsi
@@ -51,6 +53,8 @@
   id: ClothingMaskBandBlue
   name: blue bandana
   description: A blue bandana to make you look cool.
+  name: синя бандана
+  description: Синя бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/blue.rsi
@@ -62,6 +66,8 @@
   id: ClothingMaskBandBotany
   name: botany bandana
   description: A botany bandana to make you look cool, made from natural fibers.
+  name: бандана ботаніка
+  description: Бандана ботаніка, щоб виглядати круто. Зроблено з натуральник волокон.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/botany.rsi
@@ -77,6 +83,8 @@
   id: ClothingMaskBandGold
   name: gold bandana
   description: A gold bandana to make you look cool.
+  name: золота бандана
+  description: Золота бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/gold.rsi
@@ -88,6 +96,8 @@
   id: ClothingMaskBandGreen
   name: green bandana
   description: A green bandana to make you look cool.
+  name: зелена бандана
+  description: Зелена бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/green.rsi
@@ -99,6 +109,8 @@
   id: ClothingMaskBandGrey
   name: grey bandana
   description: A grey bandana to make you look cool.
+  name: сіра бандана
+  description: Сіра бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/grey.rsi
@@ -110,6 +122,8 @@
   id: ClothingMaskBandRed
   name: red bandana
   description: A red bandana to make you look cool.
+  name: червона бандана
+  description: Червона бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/red.rsi
@@ -121,6 +135,8 @@
   id: ClothingMaskBandSkull
   name: skull bandana
   description: A bandana with a skull to make you look even cooler.
+  name: бандана з черепом
+  description: Бандана з черепом, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/skull.rsi
@@ -132,6 +148,8 @@
   id: ClothingMaskBandMerc
   name: mercenary bandana
   description: To protect the head from the sun, insects and other dangers of the higher path.
+  name: військова бандана
+  description: Для захисту від сонця, комах, та інших небезпек від яких можна захиститись шматком тканини.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/merc.rsi
@@ -143,6 +161,8 @@
   id: ClothingMaskBandBrown
   name: brown bandana
   description: A brown bandana to make you look cool.
+  name: коричнева бандана
+  description: Коричнева бандана, щоб виглядати круто.
   components:
   - type: Sprite
     sprite: Clothing/Head/Bandanas/brown.rsi

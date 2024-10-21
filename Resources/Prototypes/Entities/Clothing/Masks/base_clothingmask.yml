@@ -23,6 +23,8 @@
   id: ActionToggleMask
   name: Toggle Mask
   description: Handy, but prevents insertion of pie into your pie hole.
+  name: Вдягти маску
+  description: Зручно, але запобігає поїданню пирогів.
   components:
   - type: InstantAction
     icon: { sprite: Clothing/Mask/gas.rsi, state: icon }
