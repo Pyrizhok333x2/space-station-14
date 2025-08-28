@@ -6,6 +6,10 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: Rotatable
   - type: MeleeSound
     soundGroups:
       Brute:
@@ -32,6 +36,7 @@
     - state: closed_unlit
       shader: unshaded
       map: ["enum.DoorVisualLayers.BaseUnlit"]
+      visible: false
     - state: welded
       map: ["enum.WeldableLayers.BaseWelded"]
     - state: bolted_unlit
@@ -42,6 +47,16 @@
       map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
     - state: panel_open
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.HUD"]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: ["enum.ElectrifiedLayers.Sparks"]
   - type: AnimationPlayer
   - type: ApcPowerReceiver
   - type: ExtensionCableReceiver
@@ -136,7 +151,14 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ElectrifiedVisuals.ShowSparks:
+        enum.ElectrifiedLayers.Sparks:
+          True: { visible: True }
+          False: { visible: False }
   - type: WiresVisuals
+  - type: ElectrocutionHUDVisuals
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:
@@ -164,6 +186,7 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -175,6 +198,16 @@
     - state: panel_open
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       visible: false
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.HUD" ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.Sparks" ]
   - type: Damageable
     damageModifierSet: RGlass
   - type: Destructible
@@ -224,6 +257,7 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -235,6 +269,16 @@
     - state: panel_open
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       visible: false
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.HUD" ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.Sparks" ]
   - type: Destructible
     thresholds:
     - trigger:
@@ -279,6 +323,7 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -290,6 +335,16 @@
     - state: panel_open
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       visible: false
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.HUD" ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.Sparks" ]
   - type: Destructible
     thresholds:
     - trigger:
@@ -339,6 +394,7 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -350,6 +406,16 @@
     - state: panel_open
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       visible: false
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.HUD" ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.Sparks" ]
   - type: Destructible
     thresholds:
     - trigger:
@@ -394,6 +460,7 @@
     - state: closed_unlit
       shader: unshaded
       map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      visible: false
     - state: welded
       map: [ "enum.WeldableLayers.BaseWelded" ]
     - state: bolted_unlit
@@ -405,6 +472,16 @@
     - state: panel_open
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       visible: false
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.HUD" ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ "enum.ElectrifiedLayers.Sparks" ]
   - type: Destructible
     thresholds:
     - trigger:
